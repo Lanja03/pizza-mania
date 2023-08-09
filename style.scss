@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green: #AC8E22;
+}
+
+.head {
+  @apply flex justify-between;
+}
+
+body {
+  background-color: #DDD375;
+}
+
+.p {
+  @apply text-orange-400 bg-black w-72 h-20 text-2xl flex justify-center items-center;
+  border-radius: 0px 0px 30px 0px;
+}
+
+.rs {
+  @apply bg-black flex justify-between items-center px-7 w-1/5 h-20;
+  border-radius: 0px 0px 0px 30px;
+}
+
+button {
+  @apply w-80 h-20 bg-orange-400 text-xl;
+  border-radius: 20px 0px;
+  margin-left: 270px;
+  margin-top: 85px;
+}
+
+button:hover {
+  box-shadow: 10px 0px 10px rgb(107, 107, 233);
+  background-color: #fff;
+}
+
+.H1 {
+  margin-left: 151px;
+  margin-top: 237px;
+}
+
+.img1 {
+  margin-top: 99px;
+  width: 595px;
+  height: 581px;
+  border-radius: 100px 0 0 0;
+}
+
+.nav-bar {
+  margin-left: 46px;
+}
+
+.bar {
+  @apply text-3xl ml-3.5;
+}
+
+hr {
+  color: #000;
+  margin-top: 24px;
+}
+
+.card-contenair {
+  @apply flex justify-center gap-6;
+}
+
+@mixin card {
+  width: 400px;
+  margin-top: 41px;
+  @apply h-80;
+}
+
+.img-card {
+  @include card;
+}
